@@ -224,35 +224,36 @@ body {
 
 
 
-
 /* -----------------------------------
-   FLOATING SPARKLES (ELEGANT)
+   FLOATING SPARKLES (LARGER + RESPONSIVE)
 ----------------------------------- */
 .floating-sparkle {
   position: fixed;
   color: var(--lime);
   font-family: 'Forum', serif;
-  opacity: 0.35;
+  opacity: 0.45;
   pointer-events: none;
-  animation: floatSparkle 12s ease-in-out infinite;
-  font-size: 1.4rem;
+  animation: floatSparkle 14s ease-in-out infinite;
+  font-size: clamp(2rem, 4vw, 4rem); /* responsive size */
+  z-index: 0;
 }
 
 .sparkle-one {
-  top: 22%;
-  left: 12%;
+  top: 18%;
+  left: 10%;
 }
 
 .sparkle-two {
-  bottom: 26%;
-  right: 18%;
+  bottom: 20%;
+  right: 12%;
 }
 
 @keyframes floatSparkle {
   0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-18px) rotate(8deg); }
+  50% { transform: translateY(-25px) rotate(10deg); }
   100% { transform: translateY(0px) rotate(0deg); }
 }
+
 
 
 
