@@ -1,6 +1,6 @@
-/* ------------------------------
+/* -----------------------------------
    COLOR SYSTEM
------------------------------- */
+----------------------------------- */
 :root {
   --dark-green: #0f2f2a;
   --lime: #c8ff7a;
@@ -8,9 +8,9 @@
   --text-light: #e8f5e9;
 }
 
-/* ------------------------------
+/* -----------------------------------
    GLOBAL
------------------------------- */
+----------------------------------- */
 body {
   margin: 0;
   padding: 0;
@@ -20,17 +20,40 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Forum', serif;
 }
 
-/* ------------------------------
+/* -----------------------------------
+   TOP BAR (NAME + NAV)
+----------------------------------- */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+}
+
+.site-name {
+  font-family: 'Forum', serif;
+  font-size: 2rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sparkle {
+  color: var(--lime);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* -----------------------------------
    NAVIGATION
------------------------------- */
+----------------------------------- */
 .nav-menu {
   display: flex;
-  justify-content: center;
   gap: 2rem;
-  padding: 2rem;
 }
 
 .nav-menu a {
@@ -44,9 +67,9 @@ h1, h2 {
   color: var(--lime);
 }
 
-/* ------------------------------
+/* -----------------------------------
    HERO SECTION
------------------------------- */
+----------------------------------- */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -73,9 +96,9 @@ h1, h2 {
   font-size: 1.1rem;
 }
 
-/* ------------------------------
-   IMAGE FRAME
------------------------------- */
+/* -----------------------------------
+   PROFILE IMAGE FRAME
+----------------------------------- */
 .hero-image {
   position: relative;
   text-align: center;
@@ -87,7 +110,6 @@ h1, h2 {
   border: 3px solid var(--lime);
   border-radius: 50%;
   overflow: hidden;
-  padding: 0;
 }
 
 #profile {
@@ -96,9 +118,9 @@ h1, h2 {
   object-fit: cover;
 }
 
-/* ------------------------------
+/* -----------------------------------
    BADGE
------------------------------- */
+----------------------------------- */
 .badge {
   position: absolute;
   bottom: -20px;
@@ -111,24 +133,9 @@ h1, h2 {
   font-weight: 600;
 }
 
-/* ------------------------------
-   SPARKLES
------------------------------- */
-.sparkles::before,
-.sparkles::after {
-  content: "✦";
-  position: absolute;
-  color: var(--lime);
-  font-size: 1.4rem;
-  opacity: 0.8;
-}
-
-.sparkles::before {
-  top: 20%;
-  left: 10%;
-}
-
-.sparkles::after {
-  bottom: 15%;
-  right: 20%;
+/* -----------------------------------
+   SPARKLES (REMOVED FROM HERO)
+----------------------------------- */
+.sparkles {
+  display: none; /* no longer needed */
 }
