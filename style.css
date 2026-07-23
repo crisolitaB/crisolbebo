@@ -22,6 +22,28 @@ h1, h2, .site-name {
 }
 
 /* -----------------------------------
+   PAGE LOAD AURORA GLOW
+----------------------------------- */
+body {
+  opacity: 0;
+  animation: fadeInGlow 1.4s ease forwards;
+}
+
+@keyframes fadeInGlow {
+  0% {
+    opacity: 0;
+    box-shadow: inset 0 0 200px var(--lime);
+  }
+  60% {
+    opacity: 1;
+    box-shadow: inset 0 0 80px var(--lime);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: inset 0 0 0px transparent;
+  }
+}
+/* -----------------------------------
    TOP BAR
 ----------------------------------- */
 .top-bar {
@@ -169,28 +191,7 @@ h1, h2, .site-name {
 }
 
 
-/* -----------------------------------
-   PAGE LOAD AURORA GLOW
------------------------------------ */
-body {
-  opacity: 0;
-  animation: fadeInGlow 1.4s ease forwards;
-}
 
-@keyframes fadeInGlow {
-  0% {
-    opacity: 0;
-    box-shadow: inset 0 0 200px var(--lime);
-  }
-  60% {
-    opacity: 1;
-    box-shadow: inset 0 0 80px var(--lime);
-  }
-  100% {
-    opacity: 1;
-    box-shadow: inset 0 0 0px transparent;
-  }
-}
 
 /* -----------------------------------
    NAVIGATION HOVER GLOW
