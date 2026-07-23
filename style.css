@@ -140,3 +140,17 @@ h1, h2, .site-name {
 .sparkles {
   display: none;
 }
+
+/* -----------------------------------
+   RESUME PAGE CONTENT ALIGNMENT
+----------------------------------- */
+.resume-content {
+  padding: 4rem 10%;
+}
+
+.resume-body {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
