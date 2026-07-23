@@ -15,7 +15,6 @@ body {
   background: var(--dark-green);
   color: var(--lime);
   font-family: 'Inter', sans-serif;
-  opacity: 0;
 }
 
 
