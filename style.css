@@ -225,7 +225,7 @@ body {
 
 
 /* -----------------------------------
-   FLOATING SPARKLES (LARGER + RESPONSIVE)
+   FLOATING SPARKLES (Larger DESKTOP, SMALL MOBILE)
 ----------------------------------- */
 .floating-sparkle {
   position: fixed;
@@ -234,7 +234,14 @@ body {
   opacity: 0.45;
   pointer-events: none;
   animation: floatSparkle 14s ease-in-out infinite;
-  font-size: clamp(2rem, 4vw, 4rem); /* responsive size */
+
+  /* Responsive sizing:
+     - Minimum: 1.8rem (mobile)
+     - Scales with viewport width: 5vw
+     - Maximum: 4.2rem (desktop nickel size)
+  */
+  font-size: clamp(1.8rem, 5vw, 4.2rem);
+
   z-index: 0;
 }
 
@@ -253,6 +260,7 @@ body {
   50% { transform: translateY(-25px) rotate(10deg); }
   100% { transform: translateY(0px) rotate(0deg); }
 }
+
 
 
 
