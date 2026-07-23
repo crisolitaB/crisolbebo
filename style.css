@@ -101,6 +101,33 @@ body {
 }
 
 /* -----------------------------------
+   NAVIGATION HOVER GLOW
+----------------------------------- */
+.nav-menu a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--lime);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--lime);
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* -----------------------------------
    HERO SECTION
 ----------------------------------- */
 .hero {
@@ -193,32 +220,6 @@ body {
 
 
 
-/* -----------------------------------
-   NAVIGATION HOVER GLOW
------------------------------------ */
-.nav-menu a {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 2px;
-  background: var(--lime);
-  transition: width 0.3s ease;
-}
-
-.nav-menu a:hover {
-  color: var(--lime);
-}
-
-.nav-menu a:hover::after {
-  width: 100%;
-}
 
 /* -----------------------------------
    FLOATING SPARKLES (ELEGANT)
