@@ -16,7 +16,6 @@ body {
   color: var(--lime);
   font-family: 'Inter', sans-serif;
   opacity: 0;
-  animation: fadeInGlow 1.4s ease forwards;
 }
 
 
@@ -24,28 +23,6 @@ h1, h2, .site-name {
   font-family: 'Forum', serif;
 }
 
-/* -----------------------------------
-   PAGE LOAD AURORA GLOW
------------------------------------ */
-body {
-  opacity: 0;
-  animation: fadeInGlow 1.4s ease forwards;
-}
-
-@keyframes fadeInGlow {
-  0% {
-    opacity: 0;
-    box-shadow: inset 0 0 200px var(--lime);
-  }
-  60% {
-    opacity: 1;
-    box-shadow: inset 0 0 80px var(--lime);
-  }
-  100% {
-    opacity: 1;
-    box-shadow: inset 0 0 0px transparent;
-  }
-}
 
 /* -----------------------------------
    TOP BAR
