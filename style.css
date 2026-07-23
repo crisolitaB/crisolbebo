@@ -38,6 +38,19 @@ h1, h2, .site-name {
   gap: 0.5rem;
 }
 
+/* -----------------------------------
+   RESUME PAGE CONTENT ALIGNMENT
+----------------------------------- */
+.resume-content {
+  padding: 4rem 10%;
+}
+
+.resume-body {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 /* Clean elongated sparkle */
 .sparkle {
   font-size: 1.6rem;
